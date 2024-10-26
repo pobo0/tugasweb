@@ -1,0 +1,274 @@
+* {
+    font-family: montserrat;
+}
+body {
+    background: #f1fbff; /* Tambahkan '#' untuk warna */
+}
+.section-padding {
+    padding: 10px 0;
+}
+
+/* NAVBAR */
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+    color: #000;
+}
+
+.w-100 {
+    height: 100vh;
+}
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+.navbar-brand i {
+    margin-right: 8px; /* Hapus '/' */
+}
+.border-rounded {
+    border-radius: 8px;
+}
+
+.icon-lifestyle {
+    margin: 0 10px; /* Jarak antar ikon */
+    width: 24px; /* Ukuran ikon */
+    height: 24px; /* Ukuran ikon */
+    color: #FFA500; /* Warna ikon */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.icon-lifestyle:hover {
+    color: #FF6347; /* Warna saat hover */
+}
+
+.text-highlight {
+    font-weight: bold;
+    color: #FF6347;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* CAROUSEL */
+.carousel {
+    margin-top: 56px; /* Jarak atas untuk menghindari tumpang tindih dengan navbar */
+    margin-bottom: 40px; /* Tambahkan jarak bawah antara carousel dan about */
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 90px;
+    z-index: 2;
+    text-align: center; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+.carousel-caption h5,
+.carousel-caption p {
+    color: white;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Responsive CSS */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 10px;
+    }
+}
+
+/* ABOUT */
+.about {
+    background-color: #f8f9fa; 
+    padding: 10px 0; 
+    margin-top: 80px; 
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-text {
+    padding: 20px; 
+}
+
+.about-text h2 {
+    font-size: 40px; 
+    color: #333; 
+}
+
+.about-text p {
+    font-size: 18px; 
+    color: #666;
+    text-align: justify;
+}
+
+.btn-warning {
+    background-color: #FFA500;
+    border: none;
+    color: black;
+}
+
+/* SUBSCRIBE */
+.join-community {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 60px 0; 
+    margin-top: 50px; 
+}
+
+/* FOOTER */
+.about-us, .contact, .follow-us {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 30px 0;
+    flex: 1;
+    text-align: center;
+}
+
+h2, h4 {
+    font-weight: bold;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+.follow-us .social-icon {
+    margin: 0 15px; 
+    text-align: center; 
+}
+
+.follow-us .social-icon p {
+    margin-top: 5px; 
+    font-size: 14px; 
+    color: #333; 
+}
+
+/* POP UP */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #FFA500;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+/* contect di page contact */
+
+#contact-us {
+    margin-top: 80px; 
+}
+
+.section-header p {
+    margin-bottom: 10px; 
+}
+
+/* NAVBAR */
+.navbar-nav a:hover {
+    color: #FF6347; 
+}
+
+.navbar-brand:hover {
+    color: #FF6347; 
+    transform: scale(1.05); 
+    transition: transform 0.3s; 
+}
+
+.about-img img {
+    transition: transform 0.3s; 
+}
+
+.about-img img:hover {
+    transform: scale(1.05); 
+}
+
+/* Animasi untuk ikon media sosial */
+.social-icon a {
+    transition: transform 0.3s, color 0.3s; 
+}
+
+.social-icon a:hover {
+    transform: scale(1.1); 
+    color: #FF6347; 
+}
+
+
+
